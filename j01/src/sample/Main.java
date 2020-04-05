@@ -292,11 +292,9 @@ public class Main extends Application {
                     ch == 'l' || ch == 'm' || ch == 'n' || ch == 'p' || ch == 'q' || ch == 'r' || ch == 's' || ch == 't' ||
                     ch == 'v' || ch == 'w' || ch == 'z' || ch == 'y' || ch == 'x') {
                 spolu++;
-                System.out.println("spolu " + spolu);
             }
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
                 samo++;
-                System.out.println("samo " + samo);
             }
             if (samo * 16 > 255)
                 samo = 0;
