@@ -4,16 +4,13 @@ import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
-import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
+import javafx.scene.effect.Glow;
 import javafx.scene.Group;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -25,59 +22,16 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Group root = new Group();
-        Scene scene = new Scene(root, 300, 275);
+        Scene scene = new Scene(root, 750, 200);
         HBox box = new HBox(10);
         TextField textField = new TextField();
-        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(100), e -> Szin(textField,scene)));
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(100), e -> Color(textField,scene)));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
+        Glow glow = new Glow();
 
         box.getChildren().add(textField);
         root.getChildren().add(box);
-
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
-    public void Szin(TextField textField, Scene scene) {
-        word = textField.getText();
-        for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
-            if (ch == 'b' && ch == 'c' && ch == 'd' && ch == 'f' && ch == 'g' && ch == 'h' && ch == 'j' && ch == 'k' &&
-                    ch == 'l' && ch == 'm' && ch == 'n' && ch == 'p' && ch == 'q' && ch == 'r' && ch == 's' && ch == 't' &&
-                    ch == 'v' && ch == 'w' && ch == 'z' && ch == 'y')
-                spolu++;
-            if (ch == 'a' && ch == 'e' && ch == 'i' && ch == 'o' && ch == 'u')
-                samo++;
-            scene.setFill(Color.rgb(samo * 16, spolu * 24, (word.length() % 25) * 10));
-        }
-    }
-
-
-    public static void main(String[] args) {
-        launch(args);
-    }
-}
-/*package sample;
-
-import javafx.application.Application;
-import javafx.scene.Group;
-import javafx.scene.Scene;
-import javafx.scene.effect.Glow;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
-import javafx.stage.Stage;
-
-public class Main extends Application {
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-
-        Group root = new Group();
-        Scene scene = new Scene(root, 720,200);
-        primaryStage.setTitle("Hello World");
-        scene.setFill(Color.BLACK);
-        Glow glow = new Glow();
 
         //PRVA RUNA
 
@@ -319,6 +273,52 @@ public class Main extends Application {
         glow.setLevel(10);
         l21.setEffect(glow);
         root.getChildren().add(l21);
+
+        primaryStage.setTitle("Hello World");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+    public void Color(TextField textField, Scene scene) {
+        word = textField.getText();
+        for (int i = 0; i < word.length(); i++) {
+            char ch = word.charAt(i);
+            if (ch == 'b' && ch == 'c' && ch == 'd' && ch == 'f' && ch == 'g' && ch == 'h' && ch == 'j' && ch == 'k' &&
+                    ch == 'l' && ch == 'm' && ch == 'n' && ch == 'p' && ch == 'q' && ch == 'r' && ch == 's' && ch == 't' &&
+                    ch == 'v' && ch == 'w' && ch == 'z' && ch == 'y')
+                spolu++;
+            if (ch == 'a' && ch == 'e' && ch == 'i' && ch == 'o' && ch == 'u')
+                samo++;
+            scene.setFill(Color.rgb(samo * 16, spolu * 24, (word.length() % 25) * 10));
+        }
+    }
+
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+/*package sample;
+
+import javafx.application.Application;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.effect.Glow;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Line;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+
+        Group root = new Group();
+        Scene scene = new Scene(root, 720,200);
+        primaryStage.setTitle("Hello World");
+        scene.setFill(Color.BLACK);
+        Glow glow = new Glow();
+
+
 
         primaryStage.setScene(scene);
         primaryStage.show();
