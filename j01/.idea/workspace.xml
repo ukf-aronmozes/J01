@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/j01/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/j01/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +97,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -187,6 +192,8 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1586090354750" duration="224000" />
       <workItem from="1586090746928" duration="382000" />
+      <workItem from="1586094635687" duration="551000" />
+      <workItem from="1586095205264" duration="625000" />
     </task>
     <servers />
   </component>
@@ -210,26 +217,26 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="986" y="261" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1586077193110" />
-    <state width="1337" height="266" key="GridCell.Tab.0.bottom" timestamp="1586091128619">
+    <state width="2517" height="281" key="GridCell.Tab.0.bottom" timestamp="1586096016702">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1337" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586091128619" />
-    <state width="1337" height="266" key="GridCell.Tab.0.center" timestamp="1586091128619">
+    <state width="2517" height="281" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1586096016702" />
+    <state width="2517" height="281" key="GridCell.Tab.0.center" timestamp="1586096016701">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1337" height="266" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586091128619" />
-    <state width="1337" height="266" key="GridCell.Tab.0.left" timestamp="1586091128619">
+    <state width="2517" height="281" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1586096016701" />
+    <state width="2517" height="281" key="GridCell.Tab.0.left" timestamp="1586096016701">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1337" height="266" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586091128619" />
-    <state width="1337" height="266" key="GridCell.Tab.0.right" timestamp="1586091128619">
+    <state width="2517" height="281" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1586096016701" />
+    <state width="2517" height="281" key="GridCell.Tab.0.right" timestamp="1586096016702">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1337" height="266" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586091128619" />
-    <state x="760" y="94" key="SettingsEditor" timestamp="1586033058561">
+    <state width="2517" height="281" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1586096016702" />
+    <state x="760" y="94" key="SettingsEditor" timestamp="1586095183976">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="760" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586033058561" />
+    <state x="760" y="94" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1586095183976" />
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>

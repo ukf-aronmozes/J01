@@ -16,8 +16,11 @@ import javafx.util.Duration;
 
 public class Main extends Application {
     String word = "";
+    char ch;
     int samo = 0;
     int spolu = 0;
+    int control;
+    int blue;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -278,17 +281,34 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+
     public void Color(TextField textField, Scene scene) {
         word = textField.getText();
-        for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
-            if (ch == 'b' && ch == 'c' && ch == 'd' && ch == 'f' && ch == 'g' && ch == 'h' && ch == 'j' && ch == 'k' &&
-                    ch == 'l' && ch == 'm' && ch == 'n' && ch == 'p' && ch == 'q' && ch == 'r' && ch == 's' && ch == 't' &&
-                    ch == 'v' && ch == 'w' && ch == 'z' && ch == 'y')
+        if (word.length() != 0) {
+            ch = word.charAt(word.length() - 1);
+        }
+        if (word.length() != control) {
+            if (ch == 'b' || ch == 'c' || ch == 'd' || ch == 'f' || ch == 'g' || ch == 'h' || ch == 'j' || ch == 'k' ||
+                    ch == 'l' || ch == 'm' || ch == 'n' || ch == 'p' || ch == 'q' || ch == 'r' || ch == 's' || ch == 't' ||
+                    ch == 'v' || ch == 'w' || ch == 'z' || ch == 'y' || ch == 'x') {
                 spolu++;
-            if (ch == 'a' && ch == 'e' && ch == 'i' && ch == 'o' && ch == 'u')
+                System.out.println("spolu " + spolu);
+            }
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
                 samo++;
-            scene.setFill(Color.rgb(samo * 16, spolu * 24, (word.length() % 25) * 10));
+                System.out.println("samo " + samo);
+            }
+            if (samo * 16 > 255)
+                samo = 0;
+            if (spolu *24 > 255)
+                spolu = 0;
+            if ((word.length() % 25) * 10 > 255)
+                blue = 0;
+            else
+                blue = (word.length() % 25) * 10;
+
+            scene.setFill(Color.rgb(samo * 16, spolu * 24, blue));
+            control = word.length();
         }
     }
 
@@ -297,36 +317,4 @@ public class Main extends Application {
         launch(args);
     }
 }
-/*package sample;
-
-import javafx.application.Application;
-import javafx.scene.Group;
-import javafx.scene.Scene;
-import javafx.scene.effect.Glow;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
-import javafx.stage.Stage;
-
-public class Main extends Application {
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-
-        Group root = new Group();
-        Scene scene = new Scene(root, 720,200);
-        primaryStage.setTitle("Hello World");
-        scene.setFill(Color.BLACK);
-        Glow glow = new Glow();
-
-
-
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
-
-
-    public static void main(String[] args) {
-        launch(args);
-    }
-}*/
 
